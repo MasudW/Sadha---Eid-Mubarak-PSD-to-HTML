@@ -1,0 +1,342 @@
+/*========================
+ common style  
+ ========================*/
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+body{
+   padding: 0;
+   margin: 0;
+}
+img{
+   max-width: 100%;
+   width: auto;
+}
+
+/* ============================
+main header  
+==============================*/
+
+#container{
+   background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   overflow: hidden;
+}
+
+.logo img{
+   width: 150px;
+   margin-right: 30px;
+}
+
+.nav-color li a{
+   color: #4e697c;
+   font-size: 18px;
+   font-family: Myriad Pro Regular;
+   padding-right: 30px;
+   padding-top: 10px;
+}
+.nav-color li a::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background: #ffc55b;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+}
+.nav-color li a:hover::after{
+   width: 100%;
+}
+.inner-img img{
+   width: 245px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.nav-main{
+   padding-top: 15px;
+}
+.search-bar{
+   background-color: #fff7ea;
+   width: 235px;
+   border-radius: 50px;
+   box-sizing: border-box;
+}
+.search-bar input{
+   background-color: #fff7ea;
+   outline: 0;
+   margin: 0;
+   color: black;
+   border: 0;
+   width: 70%;
+   box-sizing: border-box;
+}
+.search-bar input[type=submit]{
+   background-image: url(../img/search.png);
+   background-repeat: no-repeat;
+   width: 10%;
+   background-position: left;
+   background-size: cover;
+}
+.search-bar input[type=search]{
+   margin: 5px 5px 5px 15px;
+   box-sizing: border-box;
+}
+.tow-ico img{
+   width: 100px;
+   display: block;
+   position: absolute;
+   top: 7%;
+   left: 45%;
+   opacity: 0.7;
+}
+
+/*========================
+ main header end 
+======================= */
+
+/* ==========================
+ short article section 
+========================= */
+.head-text{
+   font-family: 'Limelight', cursive, Myriad Pro Regular;
+   margin: 135px 0 10px 45px;
+   color: #4e697c;
+   font-size: 35px;
+   width: 80%;
+}
+.article-bg{
+   margin-left: 70px;
+   margin-top: 18px;
+   width: 85%;
+   background-color: #fff7ea;
+   border-radius: 12px;
+   padding: 10px;
+   color: #4e697c;
+   font-weight: 600;
+   font-size: 17px;
+   font-family: 'Roboto', sans-serif;;
+}
+.eid-mubarak-notice{
+   margin-top: 10px;
+   margin-left: 10px;
+}
+.qould img{
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: 262px;
+   left: 64px;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+.eid-type{
+   color: #ffc55b;
+   font-family: 'Limelight', cursive, Myriad Pro Regular;
+   text-align: right;
+   padding: 0;
+   margin: 0;
+   margin-right: 7px;
+   
+}
+.btn-style{
+   background-color: #4e697c;
+   color: #fff;
+   border-radius: 50px;
+   padding: 12px 42px;
+   outline: 0;
+   border: 0;
+   margin-left: 10px;
+}
+.btn-style:hover{
+   color: #fff;
+   background-color: #ffd587;
+}
+.slide-btn{
+   margin: 30px 0 0px 34px;
+}
+.img-man img{
+   margin: 120px 10px 0 76px;
+}
+/* -------------------------- */
+/* footer section started  */
+/* -------------------------- */
+
+.ftr-image img{
+   position: absolute;
+   bottom: 0;
+   left: 0px;
+   width: 200px;
+}
+.footer-ico{
+   margin-left: 250px;
+   font-size: 25px;
+   color: #91964d;
+   overflow: hidden;
+}
+.fa-twitter,
+.fa-whatsapp{
+   background-color: #91964d;
+   color: white;
+   padding: 3px;
+   border-radius: 50%;
+   box-sizing: border-box;
+   font-size: 20px;
+   display: inline-block;
+}
+.footer-ico .fab{
+   margin-left: 5px;
+   cursor: pointer;
+   transition: .5s;
+}
+.fa-facebook:hover{
+   color: rgb(35, 49, 255);
+}
+.fa-pinterest:hover{
+   color: rgb(202, 13, 0);
+}
+.fa-twitter:hover{
+   background-color: rgb(0, 128, 202);
+}
+.fa-whatsapp:hover{
+   background-color: rgb(12, 107, 0);
+}
+.footer-ico span{
+   font-family: 'Limelight', cursive, Myriad Pro Regular;
+   margin-left: 10px;
+   color: #4e697c;
+}
+
+
+
+
+
+
+/* media  */
+@media (max-width:1206px) {
+   .head-text{
+      font-size: 30px;
+   }
+   .qould img{
+      top: 242px;
+   }
+   
+}
+@media (max-width:1040px) {
+   .head-text{
+      font-size: 25px;
+   }
+   .qould img{
+      top: 225px;
+   }
+   .slide-btn{
+      margin: 30px 0 0px 34px;
+   }
+}
+
+@media (max-width:766px) {
+   #container{
+      background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+      height: 190vh;
+   }
+   .navbar{
+      background-color: rgb(255, 234, 214);
+   }
+   .logo img{
+      width: 100px;
+   }
+   .nav-color{
+      text-align: center;
+      margin: 0;
+      margin-top: 33px;
+   }
+   .search-bar{
+      display: block;
+      margin: auto;
+      width: 80%;
+      margin-top: 20px;
+   }
+   .tow-ico img{
+      display: none;
+   }
+   .fa-bars{
+      margin-top: 7px;
+   }
+   .nav-main{
+      padding: 10px 15px;
+   }
+   .nav-color li a:hover{
+      background-color: #4e697c;
+      color: #fff;
+      transition: 0.5s;
+      border-radius: 7px;
+   }
+   .nav-color li a:after{
+      content: '';
+      width: 0%;
+   }
+   .nav-color li a:hover::after{
+      width: 0;
+   }
+   .head-text{
+      text-align: center;
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 20px;
+   }
+   .article-bg{
+      margin: auto;
+   }
+   .qould img{
+      top: 190px;
+      left:20px;
+   }
+   .btn-style{
+      display: block;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: 30px;
+   }
+   .img-man img{
+      margin: 0;
+   }
+   .footer-ico{
+      display: block;
+      margin: auto;
+      font-size: 50px;
+      text-align: center;
+      margin-top: 15px;
+   }
+   .footer-ico .fab{
+      margin: 0;
+      margin-left: 7px;
+      text-align: center;
+   }
+   .fa-twitter,
+   .fa-whatsapp{
+   font-size: 44px;
+}
+   .footer-ico span{
+      display: block;
+      font-size: 30px;
+      text-align: center;
+   }
+}
+
+@media (max-width:350px) {
+   .qould img{
+      top: 225px;
+   }
+}
+@media (max-width:286px) {
+   .qould img{
+      top: 220px;
+   }
+}
